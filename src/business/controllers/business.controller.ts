@@ -94,6 +94,7 @@ export class businessController {
     console.log(companyNumber);
 
     try {
+
       if (newData.logo) {
         const filepath = `./logo/company${companyNumber}.png`;
         fs.writeFileSync(filepath, newData.logo, { encoding: "base64" });
